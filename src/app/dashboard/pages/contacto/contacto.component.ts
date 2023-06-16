@@ -30,6 +30,7 @@ export class ContactoComponent {
     this.service.contactFromUser(this.contactForm.value).subscribe(() => {
       Swal.fire('Correo enviado', 'Pronto un asesor de contactará', 'success');
       this.enviando = false;
+      this.contactForm.reset()
     });
   }
 }

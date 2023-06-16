@@ -1,6 +1,7 @@
 .about-us{
     background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
     padding-top: 3%;
+    padding-bottom: 10px;
 }
 .title{
     font-family: 'Fira Sans', sans-serif;
@@ -20,12 +21,23 @@ p{
     width: 50vw;
 }
 .app-2{
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     width: 50vw;
 }
+
+.app-3{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right!important;
+    align-items: right!important;
+    width: 50vw;
+}
+
 .dos{
     margin-top: 50px;
     border-top: 1px solid #f3f3f3;
@@ -96,9 +108,10 @@ p{
     font-size: 1.56rem;
     font-family: 'Fira Sans', sans-serif;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     font-weight: bold;
     color: #cacdd8;
+    padding-bottom: 2%;
 }
 
 .logo-container {
@@ -107,6 +120,16 @@ p{
     justify-content: center;
     align-items: center;
     gap: 30px;
+    padding-bottom: 12%;
+}
+.partner-heading{
+    display: flex;
+    flex-direction: column;
+}
+
+.patrocinadores{
+    text-align:center!important;
+    justify-content: center!important;
 }
 
 .logo-container img {
@@ -127,9 +150,9 @@ p{
 #download-app {
     max-width: 1150px;
     width: 100%;
-     background-color: #cacdd8;
+    background-color: #cacdd8;
     height: 400px;
-    margin: 225px auto;
+    margin: 0 auto;
     border-radius: 20px;
     padding: 20px;
     display: flex;
@@ -194,51 +217,52 @@ p{
     object-position: center;
 }
 
-@media (max-width:991px){
-   .principal{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-   } 
-   .segunda{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-   }
-   .dos{
-     padding: 50px;
-   }
-   #nosotros{
-    margin: 10px 0px;
-    padding: 40px 0px;
-   }
-   .nosotros-container{
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 10px;
-    padding: 40px 0px;
-   }
-   .logo-container{
-    display: flex;
-    flex-direction: column;
-   }
-   #download-app{
-    margin: 55px auto;
-    width: 90vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   }
-   .app-img{
-    display: none;
-   }
-   .download-app-text strong{
-    display: flex;
-    justify-content: center;
 
-   }
-}
+@media (max-width:991px){
+    .principal{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     
+    } 
+    .segunda{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     
+    }
+    .dos{
+      padding: 50px;
+    }
+    #nosotros{
+     margin: 10px 0px;
+     padding: 40px 0px;
+    }
+    .nosotros-container{
+     display: grid;
+     grid-template-columns: 1fr;
+     margin-top: 10px;
+     padding: 40px 0px;
+    }
+    .logo-container{
+     display: flex;
+     flex-direction: column;
+    }
+    #download-app{
+     margin: 55px auto;
+     width: 90vw;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+    .app-img{
+     display: none;
+    }
+    .download-app-text strong{
+     display: flex;
+     justify-content: center;
+ 
+    }
+ }
