@@ -1,4 +1,97 @@
-<nav class="navbar navbar-expand-lg navegacion " >
+<header class="header">
+
+  <div class="menu container">
+    <img class="img" src="../../../../assets/img/logo_2_Mesa_de_trabajo_1.png" alt="logo" />
+  
+    <input type="checkbox" id="menu" />
+    <label for="menu">
+      <img class="menu-icono" src="../../../../assets/img//Logo.png" alt="menu-icono">
+    </label>
+  
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a routerLink="" >Home</a>
+        </li>
+        <li>
+          <a routerLink="dashboard/vender-carro" *ngIf="isLogged">Vender</a>
+        </li>
+        <li>
+          <a routerLink="dashboard/about" href="#">Acerca de</a>
+        </li>
+        <li>
+          <a routerLink="dashboard/contacto" href="#">Contactanos</a>
+        </li>
+      </ul>
+      <ul *ngIf="!isLogged">
+        <li>
+          <a routerLink="auth/ingresar">Ingresar</a>
+        </li>
+        <li>
+          <a routerLink="auth/registrarse">Registrarse</a>
+        </li>
+      </ul>
+      <ul *ngIf="isLogged">
+        <li>
+          <a routerLink="auth/perfil">Perfil</a>
+        </li>
+        <li>
+          <a routerLink="" (click)="salir()">Salir</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- <header class="header">
+
+  <div class="menu container">
+      
+    
+    <img class="img" src="../../../../assets/img/logo_2_Mesa_de_trabajo_1.png" alt="logo">
+    <input type="checkbox" id="menu">
+    <label for="menu">
+      <img src="../../../../assets/img/menu.png" alt="menu-icono">
+    </label>
+  
+    <nav class="navbar">
+      <ul >
+        <li>
+          <a>Home</a>
+        </li>
+        <li >
+          <a routerLink="dashboard/vender-carro" *ngIf="isLogged">vender</a>
+        </li>
+        <li>
+          <a routerLink="dashboard/about" href="#">Acerca de</a>
+        </li>
+        <li>
+          <a routerLink="dashboard/contacto" href="#">Contactanos</a>
+        </li>
+      </ul>
+       <ul *ngIf="!isLogged">
+        <li>
+          <a routerLink="auth/ingresar">Ingresar</a>
+        </li>
+        <li>
+          <a routerLink="auth/registrarse">Registrarse</a>
+        </li>
+      </ul>
+      <ul *ngIf="isLogged" >
+        <li>
+          <a  routerLink="auth/perfil">Perfil</a>
+        </li>
+        <li>
+          <a routerLink="" (click)="salir()">Salir</a>
+        </li>
+      </ul>
+    </nav>
+   </div>
+</header>
+
+ -->
+
+<!-- <nav class="navbar navbar-expand-lg navegacion " >
   <div class="container-fluid menu">
     <a class="navbar-brand" href="#"><img class="logo "  src="../../../../assets/img/logo_2_Mesa_de_trabajo_1.png"
         alt=""></a>
@@ -40,4 +133,4 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav> -->

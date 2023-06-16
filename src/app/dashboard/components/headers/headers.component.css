@@ -1,34 +1,86 @@
-.example-form {
-  min-width: 150px;
-  max-width: 500px;
-  width: 100%;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Fira Sans', sans-serif;
+  padding-top: 20px;
 }
 
-.example-full-width {
-  width: 100%;
-}
-.logo{
-  width: 10vh;
-  height: auto;
-}
-
-
-
-.navegacion{
-  height: 20vh;
-  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+.header {
+  padding-top: 20px;
+  display: flex;
+  min-height: 10%;
+  align-items: center;
+  background-color: #cacdd8;
   
+ /*  
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); */
 }
 
-.nav-link{
-  color: white !important
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
 }
 
-.menu{
-  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
-}
-.contenedor{
-  text-align: center;
-  color:  #182848 !important;
+a{
+  border: none;
+  text-decoration: none;
 }
 
+
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.menu .navbar ul li a {
+  font-size: 18px;
+  padding: 10px;
+  color: #182848 ;
+  display: block;
+  font-weight: bold;
+}
+.menu .navbar ul li a:hover {
+  color: #0a152f;
+}
+#menu {
+  display: none;
+}
+.menu-icono {
+  width: 35px;
+}
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.img{
+  width: 200px
+}
+
+@media (max-width: 851px) {
+  .menu label {
+    display: initial;
+  }
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    background-color: #cacdd8;
+    padding-bottom: 30px;
+  }
+  .menu .navbar ul li {
+    width: 100%;
+  }
+  #menu:checked ~ .navbar {
+    display: initial;
+  }
+}

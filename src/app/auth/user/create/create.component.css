@@ -46,6 +46,10 @@ h1 {
   /* font-family: 'PT Serif', serif; // Fuente normal */
   font-size: 5vh;
   font-weight: 800;
+  
+}
+.form-input{
+  padding-top: 10px;
 }
 @media screen and (max-width: 950px) {
   .principal {

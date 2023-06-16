@@ -5,8 +5,8 @@
     flex-direction: column;
     background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
     align-items: center;
+    padding-top: 5%;
     padding-bottom: 5%;
-    padding-top: 0.1%;   
 }
 
 .formulario-contacto{
@@ -16,6 +16,7 @@
        background-color: #cacdd8;
        border-radius: .7%;
        border: none ;
+     
    
 }
 
