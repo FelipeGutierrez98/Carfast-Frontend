@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import Swal from 'sweetalert2';
+import {environment} from '../../environment/environment';
 
 @Injectable({
   providedIn: 'root',
@@ -15,8 +16,8 @@ import Swal from 'sweetalert2';
 export class ServicesService {
   private userEmail!: string;
   private userData!: string;
-  private ApiUrl = 'http://localhost:9000/api/users';
-  private CarUrl = 'http://localhost:9000/api/cars';
+  private ApiUrl = `${environment.apiUrl}/users`;
+  private CarUrl = `${environment.apiUrl}/cars`;
 
   helper = new JwtHelperService();
   isUserLogged$ = new BehaviorSubject<string | null>(this.getToken());
